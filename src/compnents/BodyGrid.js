@@ -1,4 +1,5 @@
 import { Container, Grid, GridItem, Text } from "@chakra-ui/react";
+import MealCard from "./MealCard";
 import SearchField from "./SearchField";
 
 function BodyGrid() {
@@ -10,6 +11,7 @@ function BodyGrid() {
       <GridItem colStart={4} colEnd={6} h="100">
         <Container m={25}>
           <Text>No meals looked up</Text>
+          <MealCard />
         </Container>
       </GridItem>
     </Grid>
