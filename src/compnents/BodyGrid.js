@@ -6,9 +6,10 @@ import SearchField from "./SearchField";
 function BodyGrid() {
   const [search, setSearch] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [meal, setMeal] = useState([]);
 
   const searchFunction = () => {
-    if (!search && searchTerm.length > 0) {
+    if (!search && searchTerm.length >= 3) {
       setSearch(!search);
       console.log(searchTerm);
     }
