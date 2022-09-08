@@ -1,5 +1,11 @@
+import HeaderHero from "./compnents/HeaderHero";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <HeaderHero />
+    </>
+  );
 }
 
 export default App;
