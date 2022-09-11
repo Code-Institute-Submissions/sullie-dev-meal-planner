@@ -7,12 +7,17 @@ export default function SearchField(props) {
       <Input
         placeholder="Saerch using an ingredient"
         onChange={props.updateSearchedTerm}
+        value={props.searchTerm}
       />
-      <Button mt={1} onClick={props.searchFunction}>
-        Search
-      </Button>
       {props.searched ? (
-        <Button mt={1} mx={1} onClick={props.searchFunction}>
+        <></>
+      ) : (
+        <Button mt={1} onClick={props.searchFunction}>
+          Search
+        </Button>
+      )}
+      {props.searched ? (
+        <Button mt={1} mx={1} onClick={props.resetSearch}>
           Reset
         </Button>
       ) : (
