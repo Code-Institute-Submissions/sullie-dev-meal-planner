@@ -1,8 +1,6 @@
 # Dish Generator
 
-[View project here](https://meal-planner.sullie.repl.co/) Thisdemo project is
-hosted on [replit.com](https://replit.com/) and may take several minutes to boot
-up when launching the project first
+[View project here](https://meal-planner-chi.vercel.app/)
 
 ---
 
@@ -23,10 +21,13 @@ Responsiveness was checked using
 
 The project was created using create react app, Chakra UI and hosted on Replit
 
-1. Create a repo on Github
-2. Link repo to Replit project
-3. Import Repo
-4. Run `npm install`
+1.  Create Github repo
+1.  Head to **Vercel.com** and sign in
+1.  **New project** on the dashboard
+1.  Import Github repo.
+1.  Configure project
+1.  Wait for project to build
+1.  Once the project is built navigate to the project link
 
 ## Features
 

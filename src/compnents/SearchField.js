@@ -16,7 +16,7 @@ export default function SearchField(props) {
           Reset
         </Button>
       ) : (
-        <Button mt={1} onClick={resetSearch}>
+        <Button mt={1} onClick={searchFunction}>
           Search
         </Button>
       )}

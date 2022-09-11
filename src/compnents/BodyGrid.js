@@ -1,7 +1,5 @@
 import {
   Container,
-  Grid,
-  GridItem,
   Heading,
   ListItem,
   Text,
