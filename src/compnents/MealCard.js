@@ -2,7 +2,6 @@ import {
   Box,
   Center,
   Heading,
-  Text,
   Stack,
   useColorModeValue,
   Image,
@@ -31,15 +30,6 @@ export default function MealCard(props) {
           <Image src={mealImage} layout="fit" />
         </Box>
         <Stack>
-          <Text
-            color={"green.500"}
-            textTransform={"uppercase"}
-            fontWeight={800}
-            fontSize={"sm"}
-            letterSpacing={1.1}
-          >
-            Recipe
-          </Text>
           <a
             href={`https://google.com/search?q=${mealName}`}
             target="_blank"

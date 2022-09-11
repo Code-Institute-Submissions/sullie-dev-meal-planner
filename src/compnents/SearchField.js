@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Container, Input } from "@chakra-ui/react";
 
 export default function SearchField(props) {
-  const { resetSearch } = props;
+  const { resetSearch, searchFunction } = props;
 
   return (
     <Container m={25}>
@@ -16,7 +16,7 @@ export default function SearchField(props) {
           Reset
         </Button>
       ) : (
-        <Button mt={1} onClick={resetSearch}>
+        <Button mt={1} onClick={searchFunction}>
           Search
         </Button>
       )}

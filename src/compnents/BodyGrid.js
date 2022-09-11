@@ -1,4 +1,12 @@
-import { Container, Grid, GridItem, Text } from "@chakra-ui/react";
+import {
+  Container,
+  Grid,
+  GridItem,
+  Heading,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import MealCard from "./MealCard";
 import SearchField from "./SearchField";
@@ -14,14 +22,18 @@ function BodyGrid() {
       const response = await axios.get(
         `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`,
       );
-      setMeals(response.data.meals);
-      return setMeal(response.data.meals[Math.floor(Math.random() * 10)]);
+      setMeal(
+        response.data.meals[
+          Math.floor(Math.random() * response.data.meals.length)
+        ],
+      );
     };
     searchedMeal();
   }, [search]);
 
   const searchFunction = () => {
     if (searchTerm.length >= 3) {
+      console.log("searching");
       setSearch(true);
     }
   };
@@ -58,7 +70,29 @@ function BodyGrid() {
               resetSearch={resetSearch}
             />
           ) : (
-            <Text>Search for a meal by an ingredient</Text>
+            <>
+              <Heading> How to seach for a recipie</Heading>
+              <UnorderedList>
+                <ListItem>
+                  Enter an ingredient in the search bar (min 3 letters)
+                </ListItem>
+                <ListItem>Click search</ListItem>
+                <ListItem>A random dish will be picked</ListItem>
+                <ListItem>
+                  Click the button to Google the recipe to find your favoirte
+                  version
+                </ListItem>
+                <ListItem>
+                  Click reset to start again if you don't like the choice
+                </ListItem>
+              </UnorderedList>
+              <br></br>
+              <Text as={"b"}>
+                If we can't find a dish for your ingrdient we will automatically
+                search for a random dish, igf you don't like it just reset the
+                search
+              </Text>
+            </>
           )}
         </Container>
       </GridItem>
