@@ -89,7 +89,7 @@ function BodyGrid() {
               <br></br>
               <Text as={"b"}>
                 If we can't find a dish for your ingrdient we will automatically
-                search for a random dish, igf you don't like it just reset the
+                search for a random dish, if you don't like it just reset the
                 search
               </Text>
             </>

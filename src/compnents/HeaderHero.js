@@ -13,7 +13,7 @@ export default function HeaderHero() {
       w={"full"}
       h={"100vh"}
       backgroundImage={
-        "url(https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=80)"
+        "url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)"
       }
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
@@ -31,19 +31,9 @@ export default function HeaderHero() {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            The only smart meal planner you need to get you daily meals sorted
+            The only smart dish finder you need to get you daily meals sorted
             out.
           </Text>
-          <Stack direction={"row"}>
-            <Button
-              bg={"blue.400"}
-              rounded={"full"}
-              color={"white"}
-              _hover={{ bg: "blue.500" }}
-            >
-              Show me more
-            </Button>
-          </Stack>
         </Stack>
       </VStack>
     </Flex>
