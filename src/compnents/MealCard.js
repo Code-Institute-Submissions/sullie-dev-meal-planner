@@ -40,7 +40,11 @@ export default function MealCard(props) {
           >
             Recipe
           </Text>
-          <a href={`https://google.com/search?q=${mealName}`} target="_blank">
+          <a
+            href={`https://google.com/search?q=${mealName}`}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               bg={"blue.400"}
               rounded={"full"}

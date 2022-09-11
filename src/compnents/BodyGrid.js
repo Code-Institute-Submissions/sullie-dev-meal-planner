@@ -7,7 +7,6 @@ const axios = require("axios");
 function BodyGrid() {
   const [search, setSearch] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [meals, setMeals] = useState([]);
   const [meal, setMeal] = useState({});
 
   useEffect(() => {
@@ -31,7 +30,6 @@ function BodyGrid() {
     if (search === true) {
       setSearch(!search);
       setSearchTerm("");
-      setMeals([]);
       setMeal({});
     }
   };
