@@ -1,7 +1,6 @@
 import {
   Stack,
   Flex,
-  Button,
   Text,
   VStack,
   useBreakpointValue,
@@ -32,7 +31,7 @@ export default function HeaderHero() {
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
             The only smart dish finder you need to get you daily meals sorted
-            out.
+            out, scroll down to begin.
           </Text>
         </Stack>
       </VStack>

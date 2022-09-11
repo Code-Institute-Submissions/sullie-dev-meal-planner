@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Dish Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[View project here](https://meal-planner.sullie.repl.co/) Thisdemo project is
+hosted on [replit.com](https://replit.com/) and may take several minutes to boot
+up when launching the project first
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+For this project I have built a terminal password manager in python, the program
+allows the user to input & save new passwords along with view passwords based on
+the website name, username/email, or password name.
 
-### `npm start`
+All the passwords are encrypted and stored on a PostgreSQL database on Heroku,
+when the user retrieves the passwords they are decrypted and displayed to the
+user
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Am I responsive]([Imgur](https://i.imgur.com/oL4zcBh.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsiveness was checked using
+[Am I responsive](https://ui.dev/amiresponsive?url=https://meal-planner.sullie.repl.co/),
 
-### `npm test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project was created using create react app, Chakra UI and hosted on Replit
 
-### `npm run build`
+1. Create a repo on Github
+2. Link repo to Replit project
+3. Import Repo
+4. Run `npm install`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Features dish generators offers](https://i.imgur.com/RnO5NXG.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Current features
 
-### `npm run eject`
+Currently, dish generator r offers its users the ability to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Search for a dish using any ingredient
+- Randomly generate a dish based on the ingredient
+- Search google for a more indepth recipe to suit the users tases
+- The ability to reset the search
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Future features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In future build if this dish generator I would like to offer the abilities:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Search by dish type
+- Generate more than 1 dish
+- Allow the user to see the recipie within the app
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Validation Testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bugs:
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Solved bugs:
 
-### Analyzing the Bundle Size
+- Having the correct state being applied to the meal object, the UI was a step
+  behind the state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Unsolved bugs:
 
-### Making a Progressive Web App
+There are no unsolved bugs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Content
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Credits
 
-### Deployment
+When working through this project the main resource(s) I used were
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Chakra UI templates](https://chakra-templates.dev/) , templates would have
+  been edited to suit the project needs.
+- [Icons8](https://icons8.com/)
 
-### `npm run build` fails to minify
+### Media
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Hero image was taken from [unsplash](https://unsplash.com)
+  - ![hero image](https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)
+
+##Technologies used
+
+---
+
+- React
+  - Create React App
+- [Chakra UI](https://chakra-ui.com/)
+- Replit

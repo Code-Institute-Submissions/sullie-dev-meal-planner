@@ -51,7 +51,7 @@ function BodyGrid() {
   };
 
   return (
-    <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+    <Grid templateColumns="repeat(5, 1fr)" gap={2}>
       <GridItem colSpan={2} h="20">
         <SearchField
           searchFunction={searchFunction}
