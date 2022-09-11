@@ -32,7 +32,6 @@ function BodyGrid() {
 
   const searchFunction = () => {
     if (searchTerm.length >= 3) {
-      console.log("searching");
       setSearch(true);
     }
   };

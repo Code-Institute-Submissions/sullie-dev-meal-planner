@@ -4,15 +4,11 @@
 
 ---
 
-For this project I have built a terminal password manager in python, the program
-allows the user to input & save new passwords along with view passwords based on
-the website name, username/email, or password name.
+For this project I have built a random meal generater, the generator takes a
+single ingredient and looks for a random recieipe in when the user can then look
+through recipiens on Google
 
-All the passwords are encrypted and stored on a PostgreSQL database on Heroku,
-when the user retrieves the passwords they are decrypted and displayed to the
-user
-
-![Am I responsive]([Imgur](https://i.imgur.com/oL4zcBh.png)
+![Am I responsive](https://i.imgur.com/oL4zcBh.png)
 
 Responsiveness was checked using
 [Am I responsive](https://ui.dev/amiresponsive?url=https://meal-planner.sullie.repl.co/),
@@ -54,7 +50,14 @@ In future build if this dish generator I would like to offer the abilities:
 
 ### Validation Testing
 
+The site was also checked using Google lighthouse to check for performance
+accessability, and more performance scored a 96 and all the other categories
+scored 100. ![Imgur](https://i.imgur.com/lee8iFU.png)
+
 ## Bugs:
+
+- State no applying properly
+- Images of incorrect size
 
 ---
 
@@ -65,7 +68,10 @@ In future build if this dish generator I would like to offer the abilities:
 
 ### Unsolved bugs:
 
-There are no unsolved bugs
+There is 1 error showing into the Chrome dev tools, saying the icon is not the
+correct size
+
+![error](https://i.imgur.com/qCdOeE2.png)
 
 ## Content
 
@@ -91,4 +97,4 @@ When working through this project the main resource(s) I used were
 - React
   - Create React App
 - [Chakra UI](https://chakra-ui.com/)
-- Replit
+- [Vercel](https://vercel.com/)
