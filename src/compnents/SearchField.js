@@ -5,7 +5,7 @@ export default function SearchField(props) {
   const { resetSearch, searchFunction } = props;
 
   return (
-    <Container m={25}>
+    <Container m={25} w={{ sm: "80%", lg: "100%" }}>
       <Input
         placeholder="Saerch using an ingredient"
         onChange={props.updateSearchedTerm}
@@ -16,7 +16,7 @@ export default function SearchField(props) {
           Reset
         </Button>
       ) : (
-        <Button mt={1} onClick={searchFunction}>
+        <Button mt={1} onClick={resetSearch}>
           Search
         </Button>
       )}
